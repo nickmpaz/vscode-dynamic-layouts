@@ -10,16 +10,68 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:vscode-dynamic-layouts.helloWorld"
+		"onCommand:vscode-dynamic-layouts.setLayout",
+		"onCommand:vscode-dynamic-layouts.focusNextGroup",
+		"onCommand:vscode-dynamic-layouts.focusPreviousGroup",
+		"onCommand:vscode-dynamic-layouts.swapNextGroup",
+		"onCommand:vscode-dynamic-layouts.swapPreviousGroup",
+		"onCommand:vscode-dynamic-layouts.dynamicQuickOpen"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "vscode-dynamic-layouts.helloWorld",
-				"title": "Hello World"
+				"command": "vscode-dynamic-layouts.setLayout",
+				"title": "Dynamic Layouts: Set Layout"
+			},
+			{
+				"command": "vscode-dynamic-layouts.focusNextGroup",
+				"title": "Dynamic Layouts: Focus Next Group"
+			},
+			{
+				"command": "vscode-dynamic-layouts.focusPreviousGroup",
+				"title": "Dynamic Layouts: Focus Previous Group"
+			},
+			{
+				"command": "vscode-dynamic-layouts.swapNextGroup",
+				"title": "Dynamic Layouts: Swap Next Group"
+			},
+			{
+				"command": "vscode-dynamic-layouts.swapPreviousGroup",
+				"title": "Dynamic Layouts: Swap Previous Group"
+			},
+			{
+				"command": "vscode-dynamic-layouts.dynamicQuickOpen",
+				"title": "Dynamic Layouts: Dynamic Quick Open"
 			}
-		]
+		],
+		"keybindings": [
+			{
+				"command": "vscode-dynamic-layouts.focusNextGroup",
+				"key": "ctrl+alt+j",
+				"mac": "ctrl+alt+j"
+			},
+			{
+				"command": "vscode-dynamic-layouts.focusPreviousGroup",
+				"key": "ctrl+alt+k",
+				"mac": "ctrl+alt+k"
+			},
+			{
+				"command": "vscode-dynamic-layouts.swapNextGroup",
+				"key": "ctrl+shift+j",
+				"mac": "ctrl+shift+j"
+			},
+			{
+				"command": "vscode-dynamic-layouts.swapPreviousGroup",
+				"key": "ctrl+shift+k",
+				"mac": "ctrl+shift+k"
+			},
+			{
+				"command": "vscode-dynamic-layouts.dynamicQuickOpen",
+				"key": "ctrl+alt+p",
+				"mac": "ctrl+alt+p"
+			}
+        ]
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
