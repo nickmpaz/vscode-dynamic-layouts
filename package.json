@@ -1,5 +1,6 @@
 {
-  "name": "vscode-dynamic-layouts",
+	"name": "vscode-dynamic-layouts",
+	"publisher": "npazdev",
 	"displayName": "vscode-dynamic-layouts",
 	"description": "Provides dynamic tiling features for VS Code editor groups",
 	"version": "0.0.1",
