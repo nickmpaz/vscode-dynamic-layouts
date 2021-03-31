@@ -1,6 +1,6 @@
-# vscode-dynamic-layouts README
+# VS Code Dynamic Layouts
 
-This is the README for your extension "vscode-dynamic-layouts". After writing up a brief description, we recommend including the following sections.
+This VS Code extension provides [dynamic tiling](https://en.wikipedia.org/wiki/Dynamic_window_manager) features on top of VS Code's [editor groups](https://code.visualstudio.com/docs/getstarted/userinterface#_editor-groups). In dynamic tiling, windows are tiled based on preset layouts between which the user can switch. Dynamic tiling can decrease cognitive laod by allowing a user to open many windows without having to manually manage their position. VS Code Dynamic Layouts is inspired by tiling window managers like XMonad, DWM, and Awesome, and should feel familiar to those who use them.
 
 ## Features
 
