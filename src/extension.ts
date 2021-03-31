@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { setLayout, focusNextGroup, focusPreviousGroup, swapNextGroup, swapPreviousGroup, dynamicQuickOpen } from 'layout';
+import { setLayout, focusNextGroup, focusPreviousGroup, swapNextGroup, swapPreviousGroup, dynamicQuickOpen } from './layout';
 
 export function activate(context: vscode.ExtensionContext) {
 	registerCommand(context, 'vscode-dynamic-layouts.setLayout', setLayout);
