@@ -1,10 +1,7 @@
 import * as vscode from 'vscode';
 
-export async function setLayout({ fromQuickOpen = false }: { fromQuickOpen?: boolean } = {}) {
+export async function setLayout() {
     let numGroups: number = vscode.window.visibleTextEditors.length;
-    if (fromQuickOpen) {
-        numGroups += 1;
-    }
     if (numGroups < 2) {
         return;
     }
@@ -15,21 +12,18 @@ export async function setLayout({ fromQuickOpen = false }: { fromQuickOpen?: boo
     await vscode.commands.executeCommand('vscode.setEditorLayout', layout);
 }
 
-export function focusNextGroup() {
-    vscode.commands.executeCommand('workbench.action.focusNextGroup');
+export async function focusNextGroup(this: vscode.ExtensionContext) {
+    await vscode.commands.executeCommand('workbench.action.focusNextGroup');
 }
 
-export function focusPreviousGroup() {
-    vscode.commands.executeCommand('workbench.action.focusPreviousGroup');
+export async function focusPreviousGroup() {
+    await vscode.commands.executeCommand('workbench.action.focusPreviousGroup');
 }
 
 export async function swapNextGroup() {
     let numGroups: number = vscode.window.visibleTextEditors.length;
-    if (numGroups < 2) {
-        return;
-    }
     let currViewColumn: vscode.ViewColumn | undefined = vscode.window.activeTextEditor?.viewColumn;
-    if (currViewColumn === undefined || currViewColumn === numGroups) {
+    if (numGroups < 2 || currViewColumn === undefined || currViewColumn === numGroups) {
         return;
     }
     if (currViewColumn === 1) {
@@ -51,23 +45,30 @@ export async function swapNextGroup() {
 
 export async function swapPreviousGroup() {
     let numGroups: number = vscode.window.visibleTextEditors.length;
-    if (numGroups < 2) {
-        return;
-    }
     let currViewColumn: vscode.ViewColumn | undefined = vscode.window.activeTextEditor?.viewColumn;
-    if (currViewColumn === undefined || currViewColumn === 1) {
+    if (numGroups < 2 || currViewColumn === undefined || currViewColumn === 1) {
         return;
-    }
-    if (currViewColumn === 2) {
-        await vscode.commands.executeCommand('workbench.action.moveActiveEditorGroupLeft');
-        setLayout();
     } else {
-        vscode.commands.executeCommand('workbench.action.moveActiveEditorGroupUp')
+        await vscode.commands.executeCommand('workbench.action.moveActiveEditorGroupUp')
+        setLayout()
     }
 }
 
 export async function dynamicQuickOpen() {
-    await vscode.commands.executeCommand('workbench.action.focusFirstEditorGroup');
-    await vscode.commands.executeCommand('workbench.action.newGroupAbove');
+    let numGroups: number = vscode.window.visibleTextEditors.length;
+    if (numGroups > 0) {
+        await vscode.commands.executeCommand('workbench.action.focusFirstEditorGroup');
+        await vscode.commands.executeCommand('workbench.action.newGroupAbove');
+        await vscode.commands.executeCommand('workbench.action.focusFirstEditorGroup');
+        const uri = vscode.Uri.parse('vscode-dynamic-layouts:vscode-dynamic-layouts');
+        const doc = await vscode.workspace.openTextDocument(uri);
+        await vscode.window.showTextDocument(doc, { preview: false });
+        await setLayout();
+    }
     await vscode.commands.executeCommand('workbench.action.quickOpen');
+}
+
+export async function closeGroup() {
+    await vscode.commands.executeCommand('workbench.action.closeEditorsInGroup');
+    await setLayout();
 }

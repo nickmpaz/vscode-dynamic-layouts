@@ -44,6 +44,10 @@
 			{
 				"command": "vscode-dynamic-layouts.dynamicQuickOpen",
 				"title": "Dynamic Layouts: Dynamic Quick Open"
+			},
+			{
+				"command": "vscode-dynamic-layouts.closeGroup",
+				"title": "Dynamic Layouts: Close Group"
 			}
 		],
 		"keybindings": [
@@ -71,6 +75,11 @@
 				"command": "vscode-dynamic-layouts.dynamicQuickOpen",
 				"key": "ctrl+alt+p",
 				"mac": "ctrl+alt+p"
+			},
+			{
+				"command": "vscode-dynamic-layouts.closeGroup",
+				"key": "ctrl+alt+q",
+				"mac": "ctrl+alt+q"
 			}
         ]
 	},
