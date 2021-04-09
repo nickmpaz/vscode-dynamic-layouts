@@ -6,6 +6,7 @@ This VS Code extension provides [dynamic tiling](https://en.wikipedia.org/wiki/D
 VS Code Dynamic Layouts supports the following layouts.
 ### Tall
 A.K.A. the "Master and Stack" layout. Your first window will be positioned on the left half of the screen, and the rest will be stacked on the right half.
+
 ![feature X](images/layout-tall.svg)
 ## Commands
 VS Code Dynamic Layouts contributes the following commands:
