@@ -17,9 +17,6 @@ VS Code Dynamic Layouts contributes the following commands:
 * `vscode-dynamic-layouts.quickOpen`
     
     Opens a new editor group, then executes `workbench.action.quickOpen`. Groups are placed in the position before the current group. Use this instead of [Quick Open](https://code.visualstudio.com/docs/editor/editingevolved).
-* `vscode-dynamic-layouts.closeGroup`
-
-    Closes the current editor group and retiles the remaining groups.
 * `vscode-dynamic-layouts.focusNextGroup`
 
     Focuses the next editor group in the layout.
@@ -32,11 +29,24 @@ VS Code Dynamic Layouts contributes the following commands:
 * `vscode-dynamic-layouts.swapPreviousGroup`
 
     Swaps the current editor group with the previous group in the layout.
+* `vscode-dynamic-layouts.closeGroup`
+
+    Closes the current editor group and retiles the remaining groups.
 ## Keybindings
 VS Code Dynamic Layouts contributes the following keybindings.
 ### Default
 ```
 "keybindings": [
+    {
+        "command": "vscode-dynamic-layouts.openGroup",
+        "key": "ctrl+alt+o",
+        "mac": "ctrl+alt+o"
+    },
+    {
+        "command": "vscode-dynamic-layouts.quickOpen",
+        "key": "ctrl+alt+p",
+        "mac": "ctrl+alt+p"
+    },
     {
         "command": "vscode-dynamic-layouts.focusNextGroup",
         "key": "ctrl+alt+j",
@@ -58,11 +68,6 @@ VS Code Dynamic Layouts contributes the following keybindings.
         "mac": "ctrl+shift+k"
     },
     {
-        "command": "vscode-dynamic-layouts.quickOpen",
-        "key": "ctrl+alt+p",
-        "mac": "ctrl+alt+p"
-    },
-    {
         "command": "vscode-dynamic-layouts.closeGroup",
         "key": "ctrl+alt+q",
         "mac": "ctrl+alt+q"
@@ -72,6 +77,16 @@ VS Code Dynamic Layouts contributes the following keybindings.
 ### Recommended
 ```
 "keybindings": [
+    {
+        "command": "vscode-dynamic-layouts.openGroup",
+        "key": "ctrl+o",
+        "mac": "ctrl+o"
+    },
+    {
+        "command": "vscode-dynamic-layouts.quickOpen",
+        "key": "ctrl+p",
+        "mac": "ctrl+p"
+    },
     {
         "command": "vscode-dynamic-layouts.focusNextGroup",
         "key": "ctrl+j",
@@ -91,11 +106,6 @@ VS Code Dynamic Layouts contributes the following keybindings.
         "command": "vscode-dynamic-layouts.swapPreviousGroup",
         "key": "ctrl+shift+k",
         "mac": "ctrl+shift+k"
-    },
-    {
-        "command": "vscode-dynamic-layouts.quickOpen",
-        "key": "ctrl+p",
-        "mac": "ctrl+p"
     },
     {
         "command": "vscode-dynamic-layouts.closeGroup",
