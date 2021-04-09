@@ -106,10 +106,10 @@ VS Code Dynamic Layouts contributes the following keybindings.
 ```
 ## Getting Started
 1. Install the extension.
-2. Open a few editors using `vscode-dynamic-layouts.quickOpen` [ctrl+alt+p].
-3. Change the focused editor using `vscode-dynamic-layouts.focusNextGroup` [ctrl+alt+j] or `vscode-dynamic-layouts.focusPreviousGroup` [ctrl+alt+k].
-4. Move an editor within the layout using `vscode-dynamic-layouts.swapNextGroup` [ctrl+shift+j] or `vscode-dynamic-layouts.swapPreviousGroup` [ctrl+shift+k].
-5. Close each editor using `vscode-dynamic-layouts.closeGroup` [ctrl+alt+q]
+2. Open a few editors using `ctrl+alt+p`.
+3. Change the focused editor using `ctrl+alt+j` or `ctrl+alt+k`.
+4. Move an editor within the layout using `ctrl+shift+j` or `ctrl+shift+k`.
+5. Close each editor using `ctrl+alt+q`.
 
 
 ## Tips
