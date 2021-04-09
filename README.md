@@ -1,65 +1,127 @@
 # VS Code Dynamic Layouts
 
-This VS Code extension provides [dynamic tiling](https://en.wikipedia.org/wiki/Dynamic_window_manager) features on top of VS Code's [editor groups](https://code.visualstudio.com/docs/getstarted/userinterface#_editor-groups). In dynamic tiling, windows are tiled based on preset layouts between which the user can switch. Dynamic tiling can decrease cognitive laod by allowing a user to open many windows without having to manually manage their position. VS Code Dynamic Layouts is inspired by tiling window managers like XMonad, DWM, and Awesome, and should feel familiar to those who use them.
+This VS Code extension provides [dynamic tiling](https://en.wikipedia.org/wiki/Dynamic_window_manager) features on top of VS Code's [editor groups](https://code.visualstudio.com/docs/getstarted/userinterface#_editor-groups). In short, VS Code Dynamic Layouts manages the positions of your editors so that you don't have to. When you open a window it will automatically tile into the layout of your choice. VS Code Dynamic Layouts is inspired by tiling window managers like XMonad, DWM, and Awesome, and should feel familiar to those who use them.
 
-## Features
+## Layouts
+VS Code Dynamic Layouts supports the following layouts.
+### Tall
+A.K.A. the "Master and Stack" layout. Your first window will be positioned on the left half of the screen, and the rest will be stacked on the right half.
+![feature X](images/layout-tall.svg)
+## Commands
+VS Code Dynamic Layouts contributes the following commands:
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+* `vscode-dynamic-layouts.openGroup`
 
-For example if there is an image subfolder under your extension project workspace:
+    Opens a new editor group. Groups are placed in the position before the current group. Use this to open files from the file explorer.
+* `vscode-dynamic-layouts.quickOpen`
+    
+    Opens a new editor group, then executes `workbench.action.quickOpen`. Groups are placed in the position before the current group. Use this instead of [Quick Open](https://code.visualstudio.com/docs/editor/editingevolved).
+* `vscode-dynamic-layouts.closeGroup`
 
-\!\[feature X\]\(images/feature-x.png\)
+    Closes the current editor group and retiles the remaining groups.
+* `vscode-dynamic-layouts.focusNextGroup`
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+    Focuses the next editor group in the layout.
+* `vscode-dynamic-layouts.focusPreviousGroup`
 
-## Requirements
+    Focuses the previous editor group in the layout.
+* `vscode-dynamic-layouts.swapNextGroup`
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+    Swaps the current editor group with the next group in the layout.
+* `vscode-dynamic-layouts.swapPreviousGroup`
 
-## Extension Settings
+    Swaps the current editor group with the previous group in the layout.
+## Keybindings
+VS Code Dynamic Layouts contributes the following keybindings.
+### Default
+```
+"keybindings": [
+    {
+        "command": "vscode-dynamic-layouts.focusNextGroup",
+        "key": "ctrl+alt+j",
+        "mac": "ctrl+alt+j"
+    },
+    {
+        "command": "vscode-dynamic-layouts.focusPreviousGroup",
+        "key": "ctrl+alt+k",
+        "mac": "ctrl+alt+k"
+    },
+    {
+        "command": "vscode-dynamic-layouts.swapNextGroup",
+        "key": "ctrl+shift+j",
+        "mac": "ctrl+shift+j"
+    },
+    {
+        "command": "vscode-dynamic-layouts.swapPreviousGroup",
+        "key": "ctrl+shift+k",
+        "mac": "ctrl+shift+k"
+    },
+    {
+        "command": "vscode-dynamic-layouts.quickOpen",
+        "key": "ctrl+alt+p",
+        "mac": "ctrl+alt+p"
+    },
+    {
+        "command": "vscode-dynamic-layouts.closeGroup",
+        "key": "ctrl+alt+q",
+        "mac": "ctrl+alt+q"
+    }
+]
+```
+### Recommended
+```
+"keybindings": [
+    {
+        "command": "vscode-dynamic-layouts.focusNextGroup",
+        "key": "ctrl+j",
+        "mac": "ctrl+j"
+    },
+    {
+        "command": "vscode-dynamic-layouts.focusPreviousGroup",
+        "key": "ctrl+k",
+        "mac": "ctrl+k"
+    },
+    {
+        "command": "vscode-dynamic-layouts.swapNextGroup",
+        "key": "ctrl+shift+j",
+        "mac": "ctrl+shift+j"
+    },
+    {
+        "command": "vscode-dynamic-layouts.swapPreviousGroup",
+        "key": "ctrl+shift+k",
+        "mac": "ctrl+shift+k"
+    },
+    {
+        "command": "vscode-dynamic-layouts.quickOpen",
+        "key": "ctrl+p",
+        "mac": "ctrl+p"
+    },
+    {
+        "command": "vscode-dynamic-layouts.closeGroup",
+        "key": "ctrl+q",
+        "mac": "ctrl+q"
+    }
+]
+```
+## Getting Started
+1. Install the extension.
+2. Open a few editors using `vscode-dynamic-layouts.quickOpen` [ctrl+alt+p].
+3. Change the focused editor using `vscode-dynamic-layouts.focusNextGroup` [ctrl+alt+j] or `vscode-dynamic-layouts.focusPreviousGroup` [ctrl+alt+k].
+4. Move an editor within the layout using `vscode-dynamic-layouts.swapNextGroup` [ctrl+shift+j] or `vscode-dynamic-layouts.swapPreviousGroup` [ctrl+shift+k].
+5. Close each editor using `vscode-dynamic-layouts.closeGroup` [ctrl+alt+q]
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-For example:
+## Tips
+For best results, prefer the VS Code Dynamic Layouts commands over their default counterparts. They should be used to:
+- Open editors
+- Focus editors
+- Move editors
+- Close editors
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
+Combining these commands with others that are not provided by the extension may lead to unexpected behavior.
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release of VS Code Dynamic Layouts

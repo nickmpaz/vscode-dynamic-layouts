@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="50cm" height="28cm" viewBox="4 16 996 546" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect x="0" y="0" width="200%" height="200%" style="background-color: #000000;" />
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="10" y1="19.5" x2="994.635" y2="19.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="10" y1="337.5" x2="994.635" y2="337.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 10,19.5 A 2,2 0 0 0 8,21.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 996.635,21.5 A 2,2 0 0 0 994.635,19.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="8" y1="21.5" x2="8" y2="335.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="996.635" y1="21.5" x2="996.635" y2="335.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 8,335.5 A 2,2 0 0 0 10,337.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 994.635,337.5 A 2,2 0 0 0 996.635,335.5"/>
+    <text font-size="54.1867" style="fill: #1e90ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="502.317" y="194.933">
+      <tspan x="502.317" y="194.933">1</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="9.63454" y1="350.5" x2="241.635" y2="350.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="9.63454" y1="556.5" x2="241.635" y2="556.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 9.63454,350.5 A 2,2 0 0 0 7.63454,352.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 243.635,352.5 A 2,2 0 0 0 241.635,350.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="7.63454" y1="352.5" x2="7.63454" y2="554.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="243.635" y1="352.5" x2="243.635" y2="554.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 7.63454,554.5 A 2,2 0 0 0 9.63454,556.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 241.635,556.5 A 2,2 0 0 0 243.635,554.5"/>
+    <text font-size="54.1867" style="fill: #1e90ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="125.635" y="469.933">
+      <tspan x="125.635" y="469.933">2</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="259.635" y1="350.5" x2="494.635" y2="350.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="259.635" y1="556.5" x2="494.635" y2="556.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 259.635,350.5 A 2,2 0 0 0 257.635,352.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 496.635,352.5 A 2,2 0 0 0 494.635,350.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="257.635" y1="352.5" x2="257.635" y2="554.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="496.635" y1="352.5" x2="496.635" y2="554.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 257.635,554.5 A 2,2 0 0 0 259.635,556.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 494.635,556.5 A 2,2 0 0 0 496.635,554.5"/>
+    <text font-size="54.1867" style="fill: #1e90ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="377.135" y="469.933">
+      <tspan x="377.135" y="469.933">3</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="509.635" y1="351.5" x2="742.635" y2="351.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="509.635" y1="557.5" x2="742.635" y2="557.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 509.635,351.5 A 2,2 0 0 0 507.635,353.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 744.635,353.5 A 2,2 0 0 0 742.635,351.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="507.635" y1="353.5" x2="507.635" y2="555.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="744.635" y1="353.5" x2="744.635" y2="555.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 507.635,555.5 A 2,2 0 0 0 509.635,557.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 742.635,557.5 A 2,2 0 0 0 744.635,555.5"/>
+    <text font-size="54.1867" style="fill: #1e90ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="626.135" y="470.933">
+      <tspan x="626.135" y="470.933">4</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="760.635" y1="351.5" x2="994.635" y2="351.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="760.635" y1="558.5" x2="994.635" y2="558.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 760.635,351.5 A 2,2 0 0 0 758.635,353.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 996.635,353.5 A 2,2 0 0 0 994.635,351.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="758.635" y1="353.5" x2="758.635" y2="556.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" x1="996.635" y1="353.5" x2="996.635" y2="556.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 758.635,556.5 A 2,2 0 0 0 760.635,558.5"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #1e90ff" d="M 994.635,558.5 A 2,2 0 0 0 996.635,556.5"/>
+    <text font-size="54.1867" style="fill: #1e90ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="877.635" y="471.433">
+      <tspan x="877.635" y="471.433">5</tspan>
+    </text>
+  </g>
+</svg>
